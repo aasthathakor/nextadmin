@@ -11,6 +11,7 @@
     color: var(--textSoft);
     font-weight: bold;
     text-transform: capitalize;
+    color: rgb(223, 223, 223);
 }
 
 .menu{
@@ -23,7 +24,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #2e374a;
+    background-color: #e3e3e3;
     padding: 10px;
     border-radius: 10px;
 }
@@ -37,4 +38,12 @@
 .icons{
     display: flex;
     gap: 20px;
+    color: rgb(223, 223, 223);
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .container {
+      display: none;
+    }
 }

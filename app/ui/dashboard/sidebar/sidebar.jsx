@@ -2,10 +2,11 @@
 import React from 'react'
 import styles from "./sidebar.module.css";
 import { MdDashboard, MdSupervisedUserCircle, MdShoppingBag, MdAttachMoney, MdWork, MdAnalytics, MdPeople, MdOutlineSettings,
-MdHelpCenter, MdLogout} from "react-icons/md";
+MdHelpCenter, MdLogout, MdMenu} from "react-icons/md";
 import MenuLink from './menuLink/menuLink';
 import Image from 'next/image';
 import Link from 'next/link';
+
 
 
 const menuItems = [
@@ -19,13 +20,14 @@ const menuItems = [
       },
 
       {
-        title: "Users",
+        title: "Owner",
         path: "/dashboard/users",
         icon: <MdSupervisedUserCircle/>
       },
 
+
       {
-        title: "Products",
+        title: "Property",
         path: "/dashboard/products",
         icon: <MdShoppingBag />
       },
@@ -80,12 +82,14 @@ const menuItems = [
 
 const Sidebar = () => {
   return (
+    <>
+    <MdMenu className=' text-white' />
     <div className={styles.container}>
     <div className={styles.user}>
       <Image className={styles.userImage} src="/noavatar.png" alt="" width="50" height="50" />
       <div className={styles.userDetail}>
-      <span className={styles.username}>John joe</span>
-      <span className={styles.userTitle}>Administrator</span>
+      <span className={styles.username}>Super Admin</span>
+      <span className={styles.userTitle}>Developer</span>
       </div>
     </div>
     <ul className={styles.list}>
@@ -103,6 +107,7 @@ const Sidebar = () => {
     Logout
     </button>
     </div>
+    </>
   );
 };
 

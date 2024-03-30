@@ -1,7 +1,7 @@
-:root {
-    --bg:       #212636;
-    --bgSoft:   #121621;
-    --text:      white;
+  :root {
+    --bg:       #151c2c;
+    --bgSoft:   #182237;
+    --text:      rgb(223, 223, 223);
     --textSoft: #b7bac1;
     
 }
@@ -15,6 +15,7 @@
 body{ 
     background-color: var(--bg);
     color:  var(--text);
+    
 
 }
 a {
