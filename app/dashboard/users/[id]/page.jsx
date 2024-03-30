@@ -11,16 +11,17 @@ const SingleUser = () => {
             John Doe
         </div>
         <div className={styles.formContainer}>
+        <form action='' className={styles.form}>
           <label>Username</label>
           <input type="text" name="username" placeholder='john doe' />
           <label>Email</label>
-          <input type="email" name="email" placeholder=''/>
+          <input type="email" name="email" placeholder='johndoe@gmail.com'/>
           <label>Password</label>
-          <input type="password" name="password" />
+          <input type="password" name="password" placeholder='johndoe' />
           <label>Phone</label>
-          <input type="text" name="phone" placeholder='' />
+          <input type="text" name="phone" placeholder='5825846854' />
           <label>Address</label>
-          <textarea type="text" name="address" placeholder='' />
+          <textarea type="text" name="address" placeholder='sant luice' />
           <label>Is Admin?</label>
           <select name="isAdmin" id="isAdmin">
             <option value={true}>Yes</option>
@@ -32,6 +33,7 @@ const SingleUser = () => {
             <option value={false} >No</option>
           </select>
           <button>Update</button>
+        </form>
       </div>
     </div>
   )
